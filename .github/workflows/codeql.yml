@@ -2,38 +2,6 @@ name: "CodeQL"
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ 'master' ]
-    paths:
-      - '**.c'
-      - '**.cpp'
-      - '**.h'
-      - '**.hpp'
-      - '**.def'
-      - '**.rc'
-      - '**.idl'
-      - '**.sln'
-      - '**.vcxproj'
-      - '**.vcxproj.filters'
-      - '**.props'
-  pull_request:
-    types:
-      - opened
-    branches: [ 'master' ]
-    paths:
-      - '**.c'
-      - '**.cpp'
-      - '**.h'
-      - '**.hpp'
-      - '**.def'
-      - '**.rc'
-      - '**.idl'
-      - '**.sln'
-      - '**.vcxproj'
-      - '**.vcxproj.filters'
-      - '**.props'
-  schedule:
-    - cron: '33 7 * * 6'
 
 jobs:
   analyze-cpp:
